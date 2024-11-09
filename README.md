@@ -37,6 +37,22 @@ Before running the project, ensure that you have the following installed and con
 
 ---
 
+## Dependencies Breakdown
+
+1. **Jakarta EE API**: This is the Jakarta platform API that includes all the specifications for web applications (like Servlets, JSP, etc.).
+   - **Version**: `10.0.0`
+   - **Scope**: `provided` because Tomcat will provide the runtime environment for the application.
+
+2. **PostgreSQL JDBC Driver**: This is the JDBC driver required to connect your Java application to a PostgreSQL database.
+   - **Version**: `42.3.1` (or the latest stable version)
+
+3. **Servlet API**: Although the Jakarta EE API should cover Servlets, some configurations or Tomcat setups might require the `javax.servlet-api` dependency.
+   - **Version**: `4.0.1`
+   - **Scope**: `provided` (same reason as above).
+
+---
+
+
 ## Database Setup
 
 ### Required Tables
